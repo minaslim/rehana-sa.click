@@ -1,23 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="ar">
-  <script
-    type="text/javascript"
-    async=""
-    src="https://static.getbutton.io/widget-send-button/js/init.js"
-  ></script>
 
-  <script
-    type="text/javascript"
-    async=""
-    src="https://sc-static.net/scevent.min.js"
-  ></script>
 
-  <script
-    type="text/javascript"
-    async=""
-    src="https://www.google-analytics.com/analytics.js"
-  ></script>
+
 
   <head>
     <meta charset="utf-8" />
@@ -50,24 +36,7 @@
     <link rel="stylesheet" href="css/interactive-main.css" />
 
     <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-M7RMFC2");
-    </script>
-    <style>
-      undefined
-    </style>
+
     <!-- End Google Tag Manager -->
     <!-- Material Design Font: https://design.google.com/icons/, http://google.github.io/material-design-icons/-->
     <link
@@ -11392,6 +11361,13 @@
         right: 10px;
       }
     </style>
+    <!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
   </head>
   <script
     type="text/javascript"
@@ -12779,70 +12755,29 @@
 
     <!-- Template Engine -->
     <script src="https://verzasca.co/js/template.engine.js"></script>
-    <script type="text/javascript" id="">
-      (function () {
-        var e = {
-            whatsapp: "966540575931",
-            call_to_action:
-              "\u0645\u0631\u062d\u0628\u0627\u064b \u0628\u0643\u0645 \u0641\u064a \u0641\u064a\u0631\u0632\u0627\u0633\u0643\u0627",
-            position: "right",
-          },
-          c = document.location.protocol,
-          d = "getbutton.io",
-          b = c + "//static." + d,
-          a = document.createElement("script");
-        a.type = "text/javascript";
-        a.async = !0;
-        a.src = b + "/widget-send-button/js/init.js";
-        a.onload = function () {
-          WhWidgetSendButton.init(d, c, e);
-        };
-        b = document.getElementsByTagName("script")[0];
-        b.parentNode.insertBefore(a, b);
-      })();
-    </script>
+  <div id="WAButton"></div>
 
-    <script type="text/javascript" id="">
-      !(function (d, g, e) {
-        d.TiktokAnalyticsObject = e;
-        var a = (d[e] = d[e] || []);
-        a.methods =
-          "page track identify instances debug on off once ready alias group enableCookie disableCookie".split(
-            " "
-          );
-        a.setAndDefer = function (b, c) {
-          b[c] = function () {
-            b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
-          };
-        };
-        for (d = 0; d < a.methods.length; d++) a.setAndDefer(a, a.methods[d]);
-        a.instance = function (b) {
-          b = a._i[b] || [];
-          for (var c = 0; c < a.methods.length; c++)
-            a.setAndDefer(b, a.methods[c]);
-          return b;
-        };
-        a.load = function (b, c) {
-          var f = "https://analytics.tiktok.com/i18n/pixel/events.js";
-          a._i = a._i || {};
-          a._i[b] = [];
-          a._i[b]._u = f;
-          a._t = a._t || {};
-          a._t[b] = +new Date();
-          a._o = a._o || {};
-          a._o[b] = c || {};
-          c = document.createElement("script");
-          c.type = "text/javascript";
-          c.async = !0;
-          c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e;
-          b = document.getElementsByTagName("script")[0];
-          b.parentNode.insertBefore(c, b);
-        };
-        a.load("C8UNJJKCAQFRE887E73G");
-        a.page();
-      })(window, document, "ttq");
-    </script>
-
+<script>
+  $(function() {
+  $('#WAButton').floatingWhatsApp({
+    phone: '966540575931', //WhatsApp Business phone number International format-
+    //Get it with Toky at https://toky.co/en/features/whatsapp.
+    headerTitle: 'تحدث معنا علي الواتساب', //Popup Title
+    popupMessage: 'مرحبا! كيف يمكنني مساعدتك ؟ ', //Popup Message
+    showPopup: true, //Enables popup display
+    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+    //headerColor: 'crimson', //Custom header color
+    //backgroundColor: 'crimson', //Custom background button color
+    position: "right"    
+  });
+});
+</script>
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
     <!--validate-->
     <!--<script src="js/jquery.validate.js?v=1.7"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
